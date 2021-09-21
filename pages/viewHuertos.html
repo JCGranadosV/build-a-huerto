@@ -4,7 +4,7 @@
     <title>View Huertos</title>
     <meta charset="utf-8" />
   </head>
-  <link rel="stylesheet" type="text/css" href="../styles/index.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/viewHuertos.css" />
   <body>
     <header>
       <h1>Build-a-Huerto</h1>
@@ -13,10 +13,12 @@
     <div class="container">
       <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="infoHuertos.html">Info Huertos</a></li>
           <li><a href="infoPlantas.html">Info Plantas</a></li>
           <li><a href="viewHuertos.html">Administra Huertos</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+
         </ul>
       </nav>
     </div>
@@ -36,45 +38,79 @@
     <p id = "cultivos" style="text-align:center;">
 
     <p>
+    
 
-    <h2 style="text-align:center;">Añade una planta</h2>
-    <p style="text-align:center;">Ingresa los valores necesarios para agregar tu planta y presiona el botón "Añadir".</p>
+    <div id="content" class="formulario">
 
-    <div id="content">
-        
-        <label for="numero">Numero:</label>
-        <input type="text" id="numero" /><br />
-        
-        <label for="tipoPlanta">Tipo de Planta:</label>
-        <input type="text" id="tipoPlanta" /><br />
+      <h1>Añadir una planta</h1>
+      <p style="text-align:center;">Ingresa los valores necesarios para agregar tu planta y presiona el botón "Añadir".</p>
+      <form method="POST">
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" /><br />
-        
-        <label for="fecha">Fecha de plantacion:</label>
-        <input type="date" id="fecha" /><br />
+          <div class="input_texto">
+            <input type="number" required>
+            <span></span>
+            <label>Numero</label>
+          </div>
+   
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Tipo de planta</label>
+          </div>
 
-        <label for="sol">Sol o Sombra:</label>
-        <input type="text" id="sol" /><br />
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Nombre</label>
+          </div>
+          
+          <div class="input_texto">
+            <input type="date" required>
+            <span></span>
+            <label>Fecha de plantacion</label>
+          </div>
 
-        <label for="riego">Intervalo de Riego:</label>
-        <input type="text" id="riego" /><br />
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Sol o sombra</label>
+          </div>
 
-        <label for="cocecha">Cocecha aproximada:</label>
-        <input type="date" id="cocecha" /><br />
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Intervalo de Riego</label>
+          </div>
 
-        <label for="tamano">Tamaño del plantío:</label>
-        <input type="text" id="tamano" /><br />
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Cosecha aproximada</label>
+          </div>
 
-        <label for="costo">Costo:</label>
-        <input type="text" id="costo" /><br />
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Tamaño del plantío</label>
+          </div>
 
-        <label for="ubicacion">Ubicacion:</label>
-        <input type="text" id="ubicacion" /><br />
+          <div class="input_texto">
+            <input type="number" required>
+            <span></span>
+            <label>Costo</label>
+          </div>
 
-        
-        <label>&nbsp;</label>
-        <input type="button" id="calculate" value="Añadir" /><br />
+          <div class="input_texto">
+            <input type="text" required>
+            <span></span>
+            <label>Ubicación</label>
+          </div>
+
+          
+          <label>&nbsp;</label>
+          <input type="submit" id="calculate" value="Añadir">
+
+        </form>
     </div>
 
 
