@@ -1,7 +1,7 @@
 <?php
 	define("cServidor", "localhost");
-	define("cUsuario", "ejemplo");
-	define("cClave", "alex");
+	define("cUsuario", "root");
+	define("cClave", "");
 	define("cBd", "huerto");
 
 	function consultaBD($consulta){
