@@ -13,11 +13,11 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="infoHuertos.html">Info Huertos</a></li>
-          <li><a href="infoPlantas.html" class="active">Info Plantas</a></li>
-          <li><a href="viewHuertos.html">Administra Huertos</a></li>
-          <li><a href="login.html">Iniciar sesión</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="infoHuertos.php">Info Huertos</a></li>
+          <li><a href="infoPlantas.php" class="active">Info Plantas</a></li>
+          <li><a href="viewHuertos.php">Administra Huertos</a></li>
+          <li><a href="login.php">Iniciar sesión</a></li>
 
         </ul>
       </nav>

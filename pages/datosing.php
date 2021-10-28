@@ -37,7 +37,7 @@ else{
 
 ?>
 
-<h2><A HREF="index.html"> Menu principal </A></h2>
+<h2><A HREF="index.php"> Menu principal </A></h2>
 </body>
 </html>
 
