@@ -79,15 +79,9 @@
     </div>
   </div>
   <main>
-    <h2>
-      ¡Tu inventario de plantas!
-    </h2>
+  <h1 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Tu inventario de plantas!</span></h1>
 
     <h3>Ultimo riego</h3>
-
-
-
-
 
 
 
