@@ -12,10 +12,55 @@
   h3,
   h1,
   h2,
+  dt,
+  dd,
   p {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
     text-align: center;
+  }
+
+  ul, li{
+  list-style: none;
+}
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  #cssul{
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    text-align: center;
+  }
+  #customers {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
   }
 
   .logo {
@@ -54,11 +99,9 @@
 
     <p>Tu huerto puede tener una variacion de plantas, no solo te conformes con una! </p>
 
-    <h3>
-      Existen diferentes tipos de planta dependiendo de tus gustos.
-    </h3>
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">Existen diferentes tipos de planta dependiendo de tus gustos.</span></h3>
 
-    <table border="1">
+    <table id='customers' border="1">
       <tr>
         <th>Crucíferas</th>
         <th>Solanáceas</th>
@@ -103,11 +146,9 @@
         </td>
       </tr>
     </table>
-
-    <h3>
-      ¡Los beneficios de tener tus plantas!
-    </h3>
-    <ul>
+    <hr size="2px" color="black" />
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Los beneficios de tener tus plantas!</span></h3>
+    <ul id='cssul'>
       <li>Producción local.</li>
       <li> Educativo.</li>
       <li>Fomenta el Contacto con el aire libre.</li>
@@ -117,10 +158,8 @@
     </ul>
 
     <p> Las plantas son lo que le dan vida al huerto y a tu hogar!</p>
-
-    <h3>
-      ¡Inicia con los beneficios!
-    </h3>
+    <hr size="2px" color="black" />
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Inicia con los beneficios!</span></h3>
 
     <p> Si todavia no te convences de que tipo de planta escoger, recuerda esto:</p>
 

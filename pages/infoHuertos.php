@@ -12,10 +12,55 @@
   h3,
   h1,
   h2,
+  dt,
+  dd,
+  th,
   p {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
     text-align: center;
+  }  
+  ul, li{
+  list-style: none;
+}
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  #cssul{
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    text-align: center;
+  }
+  #customers {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
   }
 
   .logo {
@@ -50,15 +95,13 @@
     </div>
   </div>
   <main>
-    <h2>¡Descubre los huertos!</h2>
+  <h1 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Descubre los huertos!</span></h1>
 
     <p>Tener un huerto se ha convertido en una de las mejores formas de establecer un espacio verde y ecológico en tu hogar. La agricultura en la ciudad ha estando creando diferencias en el paisaje, este movimiento ha incrementado grandemente su tamaño y llega a ser mucho más eficiente que los cultivos tradicionales. Crear un huerto favorece tu alimentacion, tu dienro y tu consumo de productos saludables. </p>
 
-    <h3>
-      Existen diferentes tipos de huertos dependiendo de tu objetivo.
-    </h3>
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">Existen diferentes tipos de huertos dependiendo de tu objetivo.</span></h3>
 
-    <table border="1">
+    <table id='customers' border="1">
       <tr>
         <th>Casa</th>
         <th>Publicos</th>
@@ -78,11 +121,9 @@
         <td>Generan venta y consumo</td>
       </tr>
     </table>
-
-    <h3>
-      ¡Los beneficios de tener un huerto!
-    </h3>
-    <ul>
+    <hr size="2px" color="black" />
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Los beneficios de tener un huerto!</span></h3>
+    <ul id='cssul'>
       <li>Generan ingresos y empleos</li>
       <li>Mayor rendimiento de la tierra</li>
       <li>Idoneos para el cultivo de hortalizas</li>
@@ -92,10 +133,8 @@
     </ul>
 
     <p> Para poder hacer tu cultivo necesitaras un lugar establecido, herramientas y sobretodo conocimiento sobre los huertos.</p>
-
-    <h3>
-      ¡Inicia con los beneficios!
-    </h3>
+    <hr size="2px" color="black" />
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Inicia con los beneficios!</span></h3>
 
     <p> Si estas pensando en crear tu propio cultivo, sigue estas recomendaciones:</p>
 
@@ -126,15 +165,13 @@
       <dd>Incrementa tu conocimiento sobre el cultivo y realiza transplñantes de plantas. Utiliza semillas organicas y experimenta con sustratos y nutrientes para tus plantas.</dd>
     </dl>
 
-
-    <h3>
-      ¡Semillas y Estaciones!
-    </h3>
+    <hr size="2px" color="black" />
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Semillas y Estaciones!</span></h3>
     <p>
       Aqui se encuentra una variedad diferente de cultivos que se pueden realizar para las diferentes estaciones del año. Entre ellas se encuentran las más faciles para cultivar (hortalizas) y otras más popularmente consumidas. Para poder hacer crecer estos cultivos ten muy en cuenta la cantidad de luz de tu espacio y la estacion en la que lo estes realizando.
     </p>
 
-    <table border="1">
+    <table id='customers' border="1">
       <tr>
         <th>Primavera</th>
         <th>Verano</th>

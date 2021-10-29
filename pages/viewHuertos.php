@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-   h3,
+  h3,
   h1,
   h2,
   h4,
@@ -18,6 +18,7 @@
     font-family: "Inconsolata", sans-serif;
     text-align: center;
   }
+
   #customers {
     border-collapse: collapse;
     width: 100%;
@@ -174,7 +175,7 @@
     ?>
 
 
-
+    <hr size="2px" color="black" />
 
     <!--    -->
 
