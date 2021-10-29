@@ -264,7 +264,7 @@
   </main>
   <br />
   <footer>
-    <strong>Tec de Monterrey</strong>
+    <strong style="font-family: 'Inconsolata', sans-serif;">Tecnológico de Monterrey - 2021</strong>
   </footer>
   <script src="../javascript/viewHuertos.js"></script>
 </body>

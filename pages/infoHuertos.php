@@ -19,10 +19,13 @@
     height: 100%;
     font-family: "Inconsolata", sans-serif;
     text-align: center;
-  }  
-  ul, li{
-  list-style: none;
-}
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
   .logo {
     display: block;
     margin-left: auto;
@@ -30,11 +33,12 @@
     width: 30%;
   }
 
-  #cssul{
+  #cssul {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
     text-align: center;
   }
+
   #customers {
     border-collapse: collapse;
     width: 100%;
@@ -95,7 +99,7 @@
     </div>
   </div>
   <main>
-  <h1 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Descubre los huertos!</span></h1>
+    <h1 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">¡Descubre los huertos!</span></h1>
 
     <p>Tener un huerto se ha convertido en una de las mejores formas de establecer un espacio verde y ecológico en tu hogar. La agricultura en la ciudad ha estando creando diferencias en el paisaje, este movimiento ha incrementado grandemente su tamaño y llega a ser mucho más eficiente que los cultivos tradicionales. Crear un huerto favorece tu alimentacion, tu dienro y tu consumo de productos saludables. </p>
 
@@ -227,7 +231,7 @@
   </main>
   <br />
   <footer>
-    <strong>Tec de Monterrey</strong>
+    <strong style="font-family: 'Inconsolata', sans-serif;">Tecnológico de Monterrey - 2021</strong>
   </footer>
   <script src="../javascript/infoHuertos.js"></script>
 </body>

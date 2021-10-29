@@ -20,9 +20,11 @@
     text-align: center;
   }
 
-  ul, li{
-  list-style: none;
-}
+  ul,
+  li {
+    list-style: none;
+  }
+
   .logo {
     display: block;
     margin-left: auto;
@@ -30,11 +32,12 @@
     width: 30%;
   }
 
-  #cssul{
+  #cssul {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
     text-align: center;
   }
+
   #customers {
     border-collapse: collapse;
     width: 100%;
@@ -188,7 +191,7 @@
   </main>
   <br />
   <footer>
-    <strong>Tec de Monterrey</strong>
+    <strong style="font-family: 'Inconsolata', sans-serif;">Tecnológico de Monterrey - 2021</strong>
   </footer>
   <script src="../javascript/infoPlantas.js"></script>
 </body>
