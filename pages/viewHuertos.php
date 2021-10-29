@@ -8,12 +8,57 @@
 <link rel="stylesheet" type="text/css" href="../styles/viewHuertos.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+   h3,
+  h1,
+  h2,
+  h4,
+  p {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    text-align: center;
+  }
+  #customers {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+</style>
 
 <body>
   <header>
     <hr />
     <hr />
-    <h1>Build-a-Huerto</h1>
+    <img src="../images/logo.png" alt="logo" class="logo"></img>
     <hr />
   </header>
   <div class="w3-top">
@@ -106,7 +151,7 @@
 
     $n = 0;
 
-    echo "<table style='border-collapse:collapse' border='1'><tr><td>ID</td><td>Nombre</td><td>fecha</td><td>sol o sombra</td><td>riego</td><td>cosecha</td><td>tamaño (m2)</td><td>Costo</td><td>ubicacion</td></tr>";
+    echo "<table style='border-collapse:collapse' id='customers' border='1'><tr><th><h4>ID</h4></th><th><h4>NOMBRE</h4></th><th><h4>FECHA</h4></th><th><h4>SOL O SOMBRA</h4></th><th><h4>RIEGO</h4></th><th><h4>COSECHA</h4></th><th><h4>TAMAÑO (m2)</h4></th><th><h4>COSTO</h4></th><th><h4>UBICACIÓN</h4></th></tr>";
     while ($row = mysqli_fetch_array($resultado)) {
 
       $ID[$n] = $row['ID'];

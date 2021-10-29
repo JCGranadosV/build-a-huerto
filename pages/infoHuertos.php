@@ -8,12 +8,29 @@
 <link rel="stylesheet" type="text/css" href="../styles/index.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+  h3,
+  h1,
+  h2,
+  p {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+</style>
 
 <body>
   <header>
     <hr />
     <hr />
-    <h1>Build-a-Huerto</h1>
+    <img src="../images/logo.png" alt="logo" class="logo"></img>
     <hr />
   </header>
   <div class="w3-top">
