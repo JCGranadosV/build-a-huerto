@@ -1,3 +1,14 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,6 +57,9 @@
       </div>
       <div class="w3-col s3">
         <a href="viewHuertos.php" class="w3-button w3-block w3-black">ADMINISTRA HUERTOS</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="logout.php" class="w3-button w3-block w3-black">LOGOUT</a>
       </div>
     </div>
   </div>
