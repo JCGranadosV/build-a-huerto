@@ -94,7 +94,7 @@ session_start();
   </header>
   <div class="w3-top">
     <div class="w3-row w3-padding w3-black">
-      <div class="w3-col s3">
+      <div class="w3-col s2">
         <a href="index.php" class="w3-button w3-block w3-black">HOME</a>
       </div>
       <div class="w3-col s3">
@@ -103,10 +103,10 @@ session_start();
       <div class="w3-col s3">
         <a href="infoPlantas.php" class="w3-button w3-block w3-black">INFO PLANTAS</a>
       </div>
-      <div class="w3-col s3">
+      <div class="w3-col s2">
         <a href="viewHuertos.php" class="w3-button w3-block w3-black">ADMINISTRA HUERTOS</a>
       </div>
-      <div class="w3-col s3">
+      <div class="w3-col s2">
         <a href="logout.php" class="w3-button w3-block w3-black">LOGOUT</a>
       </div>
     </div>
