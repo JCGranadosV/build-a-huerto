@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
+?>
+
 <html>
 
 <head>
@@ -48,7 +58,7 @@
 
 	//$consulta = "INSERT INTO agenda (nombre, telefono, correo , fecha) VALUES ('$nombre', '$telefono', '$correo' , '$fecha')";
 
-	$consulta = "INSERT INTO huertos (tipoPlanta, nombre, fecha , solosombra, riego, cosecha,tamano, costo, ubicacion) VALUES ('$tipoPlanta' , '$nombre' , '$fecha' , '$solosombra', '$riego', '$cosecha', '$tamano', '$costo', '$ubicacion')";
+	$consulta = "INSERT INTO huertos (tipoPlanta, usuario, nombre, fecha , solosombra, riego, cosecha,tamano, costo, ubicacion) VALUES ('$tipoPlanta' , '{$user_data['userid']}', '$nombre' , '$fecha' , '$solosombra', '$riego', '$cosecha', '$tamano', '$costo', '$ubicacion')";
 
 	if (ConsultaBD($consulta)) {
 		echo "los datos han sido guardados<br>";

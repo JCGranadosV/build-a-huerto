@@ -47,6 +47,7 @@ INSERT INTO `fechariego` (`ID`, `ultriego`) VALUES
 
 CREATE TABLE `huertos` (
   `ID` int(11) NOT NULL,
+  `usuario` bigint(20),
   `tipoPlanta` varchar(200) NOT NULL,
   `nombre` varchar(200) NOT NULL,
   `fecha` date NOT NULL,
