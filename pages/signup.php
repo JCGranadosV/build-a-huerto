@@ -17,6 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $query = "insert into usuarios (userid,username,password) values ('$userid','$username','$password')";
 
     mysqli_query($con, $query);
+    
+    $now = time();
+    $query2 = "insert into fechariego (usuario, ultriego) values ('$userid', FROM_UNIXTIME({$now}))";
+
+    mysqli_query($con, $query2);
+
 
     header("Location: login.php");
     die;
