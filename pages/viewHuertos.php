@@ -105,7 +105,7 @@ session_start();
     <?php
     include("ConsultaBD.php");
 
-    $consulta = "SELECT ID, tipoPlanta, nombre, fecha, solosombra, riego, cosecha, tamano, costo, ubicacion FROM huertos ";
+    $consulta = "SELECT ID, tipoPlanta, nombre, fecha, solosombra, riego, cosecha, tamano, costo, ubicacion FROM huertos  where usuario = '{$user_data['userid']}'";
 
     $resultado = consultaBD($consulta);
 
