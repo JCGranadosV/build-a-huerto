@@ -29,7 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `fechariego` (
   `ID` int(11) NOT NULL,
-  `ultriego` date NOT NULL
+  `usuario` bigint(20),
+  `ultriego` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

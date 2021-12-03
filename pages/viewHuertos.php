@@ -112,11 +112,12 @@ session_start();
     if ($resultado == FALSE)
       echo "fallo conexión";
 
-    $fechacons = "SELECT ID, ultriego FROM fechariego";
+    $fechacons = "SELECT ID, ultriego FROM fechariego where usuario = '{$user_data['userid']}'";
     $fechares = consultaBD($fechacons);
 
     $row = mysqli_fetch_array($fechares);
     $ultriego = $row['ultriego'];
+
 
     echo "<h4 id = 'ultimo'>$ultriego</h4>";
 
@@ -128,33 +129,48 @@ session_start();
 
     <h4 id="ultimo"></h4>
 
+ 
 
     <?php
-    if (array_key_exists('Regar', $_POST)) {
+      if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['Regar'])) {
 
-      Regar();
-    }
-    function Regar()
-    {
+        Regar();
+      }
 
-      #include('ConsultaBD.php');
-      $fechar = date('d-m-y h:i:s');
+      function Regar()
+      {
+    
+        // include('ConsultaBD.php');
+        global $user_data;
+        global $con;
+        
+        echo "data: {$user_data['userid']}";
 
 
-      $consreg = "UPDATE fechariego SET ultriego = '$fechar'  WHERE ID = '1'";
-      $resreg = consultaBD($consreg);
-    }
+        $now = time();
+        $query2 = "update fechariego set ultriego = FROM_UNIXTIME({$now}) where usuario = '{$user_data['userid']}';";
+        echo $query2;
+        mysqli_query($con, $query2);
+
+        header("Location: viewHuertos.php");
+
+    
+        // $fechar = date('d-m-y h:i:s');
+        // $consreg = "UPDATE fechariego SET ultriego = FROM_UNIXTIME({$now}) WHERE usuario = '{$user_data['userid']}';";
+        // $resreg = consultaBD($consreg);
+      }
+
     ?>
 
-
     <label>&nbsp;</label>
-    <form method="post">
+      <form method="POST">
 
       <!--<input type="button" name= "Regar" id="Regar" value="Regar" /><br />
       -->
       <input type="submit" name="Regar" class="button" value="Regar" />
     </form>
 
+  
 
     <?php
 
